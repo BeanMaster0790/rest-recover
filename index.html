@@ -11,6 +11,11 @@
     src: url("DINPro-Bold_13934.ttf");
 }
 
+@font-face {
+    font-family: "MainFont-slim";
+    src: url("dinpro.otf");
+}
+
 body{
     overflow-x: hidden;
 }
@@ -19,67 +24,69 @@ button{
     border: none;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
 
-    body{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #38a6a7;
-        padding: 160px;
-        text-wrap: nowrap;
-        font-family: "MainFont";
-        height: 100vh;
-        overflow-x: hidden;
-    }
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #38a6a7;
+    padding: 50px;
+    text-wrap: nowrap;
+    font-family: "MainFont";
+    height: 100vh;
+}
 
-    .desktop-img{
-        display: none;
-    }
-    
-    .main-content {
-        display: flex;
-        margin-left: 30px;
-        margin-bottom: 100px;
-    }
-    
-    .product-tagline{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: rotate(90deg);
-        font-size: 25px;
-        margin-left: -355px;
-        margin-top: -65px;
-    }
-    
-    .product-name{
-        transform: rotate(90deg);
-        font-size: 60px;
-        letter-spacing: -8px;
-        line-height: 0.78;
-        color: white;
-    }
+.desktop-img{
+    display: none;
+}
 
-    .product-tagline img{
-        transform: rotate(-90deg);
-        margin-left: 57px;
-        height: 250px;
-        width: auto;
-    }
-    
-    .features {
-        font-size: 18px;
-        margin-top: 60px;
-        list-style: none;
-    }
-    
-    .features li::before {
-    content: "✓";
-    margin-right: 10px;
-    color: #FFFFFF;
-    }
+.main-content {
+    display: flex;
+    margin-left: 51px;
+    margin-bottom: 140px;
+    margin-top: 250px;
+}
+
+.product-tagline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    font-size: 32px;
+    margin-left: -480px;
+    margin-top: 9px;
+}
+
+.product-name{
+    transform: rotate(90deg);
+    font-size: 64px;
+    letter-spacing: -8px;
+    line-height: 0.78;
+    color: white;
+    font-weight: bolder;
+}
+
+.product-tagline img{
+    transform: rotate(-90deg);
+    margin-left: 93px;
+    height: 250px;
+    width: auto;
+}
+
+.features {
+    font-family: "MainFont-slim";
+    font-size: 13px;
+    margin-top: 60px;
+    list-style: none;
+}
+
+.features li::before {
+content: "✓";
+margin-right: 10px;
+color: #FFFFFF;
+}
 }
 
 @media (min-width: 1001px){
